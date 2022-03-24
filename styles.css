@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: radial-gradient(gray, rgb(82, 82, 144));
+    width: 100%;
+    height: 100%;
+}
+
+.calendar {
+    width: 70vw;
+    margin: auto;
+    margin-top: 7rem;
+    padding: 1rem;
+    font-size: 1.5rem;  
+    border-collapse: collapse;  
+    box-shadow: h-offset v-offset blur spread color |inset|initial|inherit;
+}
+
+.calendar tr th:only-child,
+.calendar tr:nth-child(2) th {
+    color: white;
+    padding: 2rem;
+}
+
+.calendar tr th:only-child {
+    font-size: 2rem;
+    background-image: linear-gradient(to right, gray, rgb(61, 61, 212));
+}
+
+.calendar tr:nth-child(2)  {
+    font-size: 1rem;
+    background-image: linear-gradient(to left, gray, rgb(61, 61, 212));
+}
+
+.weekdays {
+    width: auto;
+    height: 120px;
+    text-align: right;
+    vertical-align: top;
+    color: white;
+    font-size: 1rem;
+    background-image: linear-gradient(to right, rgb(139, 139, 139), rgb(124, 124, 226));
+}
+
+.weekdays td {
+    padding: 1rem;
+}
+
+.weekdays td:last-child {
+    background-color: rgba(255, 255, 255, 0.274) ;
+}
+
+.weekdays td:nth-child(6) {
+    background-color: rgba(255, 255, 255, 0.205) ;
+}
+
+.calendar tr:nth-child(5) td{
+    background-color: rgba(255, 255, 255, 0.082);
+}
+
+div {
+    margin-top: 2rem;
+    padding-left: 25rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+div::before {
+    display: inline-block;
+    content: '';
+    background-image: linear-gradient(to right, gray, rgb(168, 168, 168));
+    width: 30px;
+    height: 20px;
+}
